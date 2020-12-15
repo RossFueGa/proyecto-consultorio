@@ -1,13 +1,15 @@
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 <button class="btn btn-success float-right m-3"
         (click)="onGuardarDoctor()">Registrar Doctor</button>
 <table class="table">
   <thead>
   <tr>
-    <th scope="col">Matricula</th>
-    <th scope="col">Nombre</th>
-    <th scope="col">Especialidad</th>
-    <th scope="col">Cedula</th>
-    <th scope="col">Direcciòn</th>
+    <th scope="col">Enrollment</th>
+    <th scope="col">Name</th>
+    <th scope="col">Speciality</th>
+    <th scope="col">Identification card</th>
+    <th scope="col">Address</th>
   </tr>
   </thead>
   <tbody *ngIf="doctors.length">
@@ -23,7 +25,7 @@
   <tr>
     <td colspan="6">
       <div class="alert alert-warning text-center" role="alert">
-        No se encontraron resultados
+        Search not found
       </div>
     </td>
   </tr>

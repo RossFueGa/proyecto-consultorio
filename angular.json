@@ -28,7 +28,8 @@
               "src/assets"
             ],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/font-awesome/css/font-awesome.min.css",
               "src/styles.scss"
             ],
             "scripts": []
@@ -127,5 +128,8 @@
       }
     }
   },
-  "defaultProject": "project-surgery-frontend"
+  "defaultProject": "project-surgery-frontend",
+  "cli": {
+    "analytics": "4d631e08-265d-4dfa-b8c9-02e2137e7144"
+  }
 }

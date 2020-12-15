@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-  <a class="navbar-brand" href="javascript:void(0)">Consultorio"Cortes"</a>
+  <a class="navbar-brand" href="javascript:void(0)">Consultorio"Cortés"</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -15,12 +15,12 @@
       <li class="nav-item" *ngIf="isLogin">
         <a
           class="nav-link text-white"
-          routerLink="/surgery/patient">Paciente</a>
+          routerLink="/surgery/patient">Patient</a>
       </li>
       <li class="nav-item" *ngIf="!isLogin">
         <a
           class="nav-link text-white"
-          routerLink="/registry">Registro</a>
+          routerLink="/registry">Registry</a>
       </li>
       <li class="nav-item" *ngIf="!isLogin">
         <a
@@ -30,14 +30,14 @@
       <li class="nav-item">
         <a
           class="nav-link text-white"
-          routerLink="/doctor">Paciente</a>
+          routerLink="/doctor">Patient</a>
       </li>
 
 
       <li class="nav-item" *ngIf="isLogin">
         <a
           class="nav-link text-white"
-          (click)="onLogout()">Cerrar Sesion</a>
+          (click)="onLogout()">Logout</a>
       </li>
     </ul>
   </div>

@@ -1,63 +1,41 @@
-<div class="card">
-  <div class="card.header">
-    <h3>Doctor</h3>
-  </div>
-  <div class="card-body">
-    <form [formGroup]="doctorForm">
-      <div class="form-group">
-        <label for="">Matricula</label>
-        <input
-          formControlName="enrollment"
-          name="enrollment"
-          type="text"
-          class="form-control"
-        />
-      </div>
-      <div class="form-group">
-        <label for="">Nombre</label>
-        <input
-          formControlName="name"
-          name="name"
-          type="text"
-          class="form-control"
-        />
-      </div>
-      <div class="form-group">
-        <label for="">Especialidad</label>
-        <input
-          formControlName="speciality"
-          name="speciality"
-          type="text"
-          class="form-control"
-        />
-      </div>
+<navbar-surgery [isLogin]="false"></navbar-surgery>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<div class="container">
+  <div class="card">
+    <div class="card.header">
+      <h3>Doctor</h3>
+    </div>
+    <div class="card-body">
+      <form [formGroup]="doctorForm">
+        <div class="form-group">
+          <label for=""><i class="far fa-user"></i>Enrollment</label>
+          <input formControlName="enrollment" name="enrollment" type="text" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for=""><i class="far fa-user"></i>Name</label>
+          <input formControlName="name" name="name" type="text" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for=""><i class="far fa-user"></i>Speciality
+          </label>
+          <input formControlName="speciality" name="speciality" type="text" class="form-control" />
+        </div>
 
-      <div class="form-group">
-        <label for="">Cedula</label>
-        <input
-          formControlName="identificationCard"
-          name="identificationCard"
-          type="text"
-          class="form-control"
-        />
-      </div>
+        <div class="form-group">
+          <label for=""><i class="far fa-user"></i>Identification card</label>
+          <input formControlName="identificationCard" name="identificationCard" type="text" class="form-control" />
+        </div>
 
-      <div class="form-group">
-        <label for="">Direcciòn</label>
-        <input
-          formControlName="address"
-          name="address"
-          type="text"
-          class="form-control"
-        />
-      </div>
+        <div class="form-group">
+          <label for=""><i class="far fa-user"></i>Address</label>
+          <input formControlName="address" name="address" type="text" class="form-control" />
+        </div>
 
 
-      <div class="form-group">
-        <button class="btn btn-primary" (click)="onGuardarDoctor()"> Registrar Medico</button>
-      </div>
-    </form>
-
+        <div class="form-group">
+          <button class="btn btn-primary" (click)="onGuardarDoctor()"><i class="far fa-user"></i> Register Doctor</button>
+        </div>
+      </form>
+    </div>
   </div>
 </div>
-

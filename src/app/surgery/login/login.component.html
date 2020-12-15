@@ -1,4 +1,5 @@
 <navbar-surgery [isLogin]="false"></navbar-surgery>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <div class="container ">
   <div class="card">
     <div class="card.header">
@@ -7,15 +8,15 @@
     <div class="card-body">
       <form [formGroup]="loginForm">
         <div class="form-group">
-          <label for="">Usuario</label>
-          <input formControlName="user" name="user" type="text" class="form-control">
+          <label for=""> <i class="far fa-user"></i>User</label>
+          <input  placeholder="user" formControlName="user" name="user" type="text" class="form-control">
         </div>
         <div class="form-group">
-          <label for="">Contraseña</label>
-          <input formControlName="password" name="password" type="password" class="form-control">
+          <label for=""> <i class="far fa-envelope"></i>Password</label>
+          <input placeholder="password" formControlName="password" name="password" type="password" class="form-control">
         </div>
         <div class="form-group">
-          <button
+          <button 
             class="btn btn-primary"
             (click)="onLogin()">Login</button>
         </div>
@@ -24,3 +25,4 @@
     </div>
   </div>
 </div>
+<a class="me" href="https://codepen.io/uzcho_/pens/popular/?grid_type=list" target="_blank" style="color:#000"></a>

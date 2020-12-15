@@ -1,39 +1,40 @@
 <navbar-surgery [isLogin]="false"></navbar-surgery>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <div class="container ">
   <div class="card">
     <div class="card.header">
-      <h3>Registro</h3>
+      <h3>Registry</h3>
     </div>
     <div class="card-body">
       <form [formGroup]="registroForm">
         <div class="form-group">
-          <label for="">Clave</label>
+          <label for="">ID</label>
           <input formControlName="id" name="id" type="text" class="form-control">
         </div>
         <div class="form-group">
-          <label for="">Nombre:</label>
+          <label for="">Name</label>
           <input formControlName="name" name="name" type="text" class="form-control">
         </div>
 
         <div class="form-group">
-          <label for="">Telefono</label>
+          <label for="">Phone number</label>
           <input formControlName="telephone" name="telephone" type="text" class="form-control">
         </div>
 
         <div class="form-group">
-          <label for="">correoElectronico</label>
+          <label for="">e-mail</label>
           <input formControlName="email" name="email" type="text" class="form-control">
         </div>
 
         <div class="form-group">
-          <label for="">Contraseña</label>
+          <label for="">Password</label>
           <input formControlName="password" name="password" type="password" class="form-control">
         </div>
 
         <div class="form-group">
           <button
             class="btn btn-primary"
-            (click)="onGuardarUsuario()">Registrar</button>
+            (click)="onGuardarUsuario()">Save</button>
         </div>
       </form>
     </div>
