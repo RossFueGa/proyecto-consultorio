@@ -1,0 +1,35 @@
+<button class="btn btn-success float-right m-3"
+        (click)="onGuardarPaciente()">Registrar Paciente</button>
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col">NSS</th>
+    <th scope="col">Nombre</th>
+    <th scope="col">Primer Apellido</th>
+    <th scope="col">Segundo Apellido</th>
+    <th scope="col">Direcciòn</th>
+    <th scope="col">Doctor</th>
+
+  </tr>
+  </thead>
+  <tbody *ngIf="patients.length">
+  <tr *ngFor="let patient of patients">
+    <td>{{patient.nss}}</td>
+    <td>{{patient.name}}</td>
+    <td>{{patient.firstSurname}}</td>
+    <td>{{patient.secondSurname}}</td>
+    <td>{{patient.address}}</td>
+    <td>{{patient.doctor.name}}</td>
+
+  </tr>
+  </tbody>
+  <tbody *ngIf="!patients.length">
+  <tr>
+    <td colspan="6">
+      <div class="alert alert-warning text-center" role="alert">
+        No se encontraron resultados
+      </div>
+    </td>
+  </tr>
+  </tbody>
+</table>

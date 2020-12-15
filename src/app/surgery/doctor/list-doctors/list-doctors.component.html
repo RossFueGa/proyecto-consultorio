@@ -1,0 +1,31 @@
+<button class="btn btn-success float-right m-3"
+        (click)="onGuardarDoctor()">Registrar Doctor</button>
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col">Matricula</th>
+    <th scope="col">Nombre</th>
+    <th scope="col">Especialidad</th>
+    <th scope="col">Cedula</th>
+    <th scope="col">Direcciòn</th>
+  </tr>
+  </thead>
+  <tbody *ngIf="doctors.length">
+  <tr *ngFor="let doctor of doctors">
+    <td>{{doctor.enrollment}}</td>
+    <td>{{doctor.name}}</td>
+    <td>{{doctor.speciality}} </td>
+    <td>{{doctor.identificationCard}}</td>
+    <td>{{doctor.address}}</td>
+  </tr>
+  </tbody>
+  <tbody *ngIf="!doctors.length">
+  <tr>
+    <td colspan="6">
+      <div class="alert alert-warning text-center" role="alert">
+        No se encontraron resultados
+      </div>
+    </td>
+  </tr>
+  </tbody>
+</table>
